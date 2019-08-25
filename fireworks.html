@@ -117,9 +117,17 @@
 			}
 			.banner-text {
 				text-align: center;
-				background-color: #000;
 				line-height: 2em;
 			}
+      .bold {
+        font-weight: bold;
+      }
+      .nowrap {
+        white-space: nowrap;
+      }
+      .font-size_2rem {
+        font-size: 2rem;
+      }
 		</style>
 	</head>
 	<body>
@@ -165,7 +173,37 @@
 				<amp-story-grid-layer template="vertical" class="bottom">
 					<p animate-in="fade-in" animate-in-duration="0.8s" animate-in-delay="0.5s">鮮やかなピンク色が眩しい</p>
 				</amp-story-grid-layer>
-			</amp-story-page>
+      </amp-story-page>
+      <amp-story-page id="end-card">
+				<amp-story-grid-layer template="vertical" class="noedge">
+          <amp-img 
+            src="assets/firework_1.jpg"
+            width="720"
+            height="480"
+						layout="responsive"
+          ></amp-img>
+          <amp-img 
+            src="assets/firework_2.jpg"
+            width="720"
+            height="480"
+						layout="responsive"
+          ></amp-img>
+          <amp-img 
+            src="assets/firework_3.jpg"
+            width="720"
+            height="480"
+						layout="responsive"
+          ></amp-img>
+        </amp-story-grid-layer> 
+				<amp-story-grid-layer template="fill" class="center-text">
+          <p 
+            class="banner-text bold font-size_2rem nowrap" 
+            animate-in="fly-in-top"
+            animate-in-delay="0.5s"
+            animate-in-duration="0.8s"
+          >Pixel 3aによる素晴らしき<wbr>写真の数々</p>
+        </amp-story-grid-layer>
+      </amp-story-page>
 		</amp-story>
 	</body>
 </html>
