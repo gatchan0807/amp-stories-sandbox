@@ -95,8 +95,8 @@
         padding-top: 0.5em;
 				font-size: 1em;
 				line-height: 1.5em;
-				color: white;
-			}
+        color: white;
+      }
 			q {
 				font-weight: 300;
 				font-size: 1.1em;
@@ -125,6 +125,9 @@
       .font-size_1_5rem {
         font-size: 1.5rem;
       }
+      .gradation {
+        background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0, 0, 0, 0.5));
+      }
 		</style>
 	</head>
 	<body>
@@ -133,7 +136,7 @@
 				<amp-story-grid-layer template="fill">
 					<amp-img src="assets/firework_1.jpg" layout="responsive">
 					</amp-img>
-				</amp-story-grid-layer>
+        </amp-story-grid-layer>
 				<amp-story-grid-layer template="thirds">
           <div grid-area="upper-third">
             <h1 animate-in="fade-in" animate-in-duration="0.8s" animate-in-delay="0.5s">一尺五寸玉</h1>
@@ -146,11 +149,10 @@
 					<amp-img
 						src="assets/firework_2.jpg"
 					></amp-img>
-				</amp-story-grid-layer>
-				<amp-story-grid-layer template="thirds">
-          <div grid-area="upper-third">
-          </div>
-				</amp-story-grid-layer>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="fill">
+          <div class="gradation"></div>
+        </amp-story-grid-layer>
 				<amp-story-grid-layer template="vertical" class="bottom">
           <h1 animate-in="fade-in" animate-in-duration="0.8s" animate-in-delay="0.5s">二尺玉</h1>
           <p animate-in="fade-in" animate-in-duration="0.8s" animate-in-delay="0.5s">画面いっぱいに広がる金色の光</p>
@@ -161,13 +163,16 @@
 					<amp-img
 						src="assets/firework_3.jpg"
 					></amp-img>
-				</amp-story-grid-layer>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="fill">
+          <div class="gradation"></div>
+        </amp-story-grid-layer>
 				<amp-story-grid-layer template="vertical">
 					<h1 animate-in="fade-in" animate-in-duration="0.8s" animate-in-delay="0.5s">八号玉</h1>
 				</amp-story-grid-layer>
 				<amp-story-grid-layer template="vertical" class="bottom">
 					<p animate-in="fade-in" animate-in-duration="0.8s" animate-in-delay="0.5s">鮮やかなピンク色が眩しい</p>
-				</amp-story-grid-layer>
+        </amp-story-grid-layer>
       </amp-story-page>
       <amp-story-page id="end-card">
 				<amp-story-grid-layer template="vertical" class="noedge">
@@ -192,7 +197,7 @@
         </amp-story-grid-layer> 
 				<amp-story-grid-layer template="fill" class="center-text">
           <p 
-            class="banner-text bold font-size_1_5rem" 
+            class="banner-text font-size_1_5rem" 
             animate-in="fly-in-top"
             animate-in-delay="0.5s"
             animate-in-duration="0.8s"
