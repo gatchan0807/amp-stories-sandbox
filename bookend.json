@@ -1,0 +1,22 @@
+{
+	"bookendVersion": "v1.0",
+	"shareProviders": ["facebook", "twitter", "email"],
+	"components": [
+		{
+			"type": "heading",
+			"text": "ABOUT THIS STORY"
+        }, 
+        {
+            "type": "small",
+            "title": "Taken with Google Pixel 3a",
+            "url": "https://store.google.com/jp/product/pixel_3a",
+            "image": "/assets/Google_G_Logo.png"
+        },
+        {
+            "type": "small",
+            "title": "Photo and Created by gatchan0807",
+            "url": "https://twitter.com/gatchan0807",
+            "image": "/assets/gatchan0807_Logo.png"
+        }
+	]
+}
